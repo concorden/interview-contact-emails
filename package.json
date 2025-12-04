@@ -1,0 +1,25 @@
+{
+  "name": "bun-react-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/server/index.ts",
+    "seed": "bun src/server/db/seed.ts"
+  },
+  "dependencies": {
+    "bun-plugin-tailwind": "^0.1.2",
+    "drizzle-orm": "^0.44.7",
+    "react": "^19",
+    "react-dom": "^19",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/bun": "latest",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "better-sqlite3": "^12.5.0",
+    "drizzle-kit": "^0.31.7"
+  }
+}
