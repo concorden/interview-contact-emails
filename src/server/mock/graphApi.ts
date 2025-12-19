@@ -15,6 +15,9 @@ export interface MessagesResponse {
   value: Message[];
 }
 
-export function getMessages(): MessagesResponse {
+// Fetches the entire mailbox of the user
+export async function getMessages(): Promise<MessagesResponse> {
+  await Bun.sleep(1000);
+
   return { value: MOCK_MESSAGES };
 }
